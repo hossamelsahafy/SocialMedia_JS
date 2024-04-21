@@ -9,5 +9,5 @@ app.use(bodyParser.json());
 
 app.use("/api/user", route);
 app.use("/api/blog", blogRoute)
-mongoose.connect('mongodb+srv://admin:aKJfFiH8LdUfpvjF@cluster0.lzbpskl.mongodb.net/Socialmedia?retryWrites=true&w=majority&appName=Cluster0'
+mongoose.connect('mongodb+srv://admin:******@cluster0.lzbpskl.mongodb.net/Socialmedia?retryWrites=true&w=majority&appName=Cluster0'
 ).then(()=>app.listen(5000)).then(()=>console.log("Connected To DataBase And Listening To Localhost 5000")).catch((err)=>console.log(err));
